@@ -1,0 +1,114 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 1200px;
+    h3 {   
+        display: flex; 
+        align-items: center;   
+        padding-left:10px;
+        margin: 12px;
+        margin-top:0;
+        width: 90%;
+        height: 45px;
+        font-size: 25px;
+        @extend %box;
+    }
+    .search {
+       @extend %box-input;
+       input  {
+           padding: 8px;
+           width: 86%;
+           height: 28px;
+           border-radius: 5px;
+           background: transparent;
+           border-style: none;
+           &:focus{
+            outline: none;
+           }
+       }
+       button {
+           cursor: pointer;
+           width: 11%;
+           padding: 2px;
+           height: 28px;
+           font-size: 15px;
+           background: transparent;
+           border: none;
+           border-left: $border ;
+           color: rgb(109, 109, 109);
+       }
+    }
+    .general-box {
+        background: $claro;
+        height: 300px;
+        border: $border;
+        box-shadow: $shadow, 1px 2px 4px rgb(170, 170, 170);
+    }
+    #user, #sponsors{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .user-box{
+            @extend %box-input;
+        input {
+           padding: 8px;
+           width: 86%;
+           height: 28px;
+           border-radius: 5px;
+           background: transparent;
+           border-style: none;
+           &:focus{
+            outline: none;
+             }
+           }
+           label {
+            width: 11%;
+            padding-left: 5px;
+            height: 28px;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            }
+        }
+            input[type="submit"],
+            input[type="reset"] {
+                margin: 20px 0px 20px 25px;
+                cursor: pointer;
+                color: $claro;
+                background:  linear-gradient(to bottom, $azul-claro 0%,#2a90be 100%);
+                width: 80px;
+                height: 40px;
+                transition: 0.5s;
+                border: $border;
+                outline: none;
+                &:hover {
+                    background:$azul;
+                }
+            }
+         a {
+             display: block;
+             margin-left:25px;
+             font-family: $font;
+             color: black;
+         }   
+    }
+    #social {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            i {
+                width: 30%;
+                font-size: 30px;
+                padding: 18px;
+                color: rgb(41, 41, 41);
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.section-3 {
+    display: flex;
+    padding: 6%;
+    article {
+        width: 70%;
+        height: auto;
+        h2 {
+            @extend %box;
+            width: 90%;
+            height: 75px;
+            text-align: center;
+            font-size: 35px;
+            padding: 18px;
+        }
+        .article {
+            margin-top: 40px;
+            width: 90%;
+            border: $border;
+            height: 1auto;
+            .article-flex {
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    padding: 10px;
+                    @extend %font-2;
+                    }
+                .fecha {
+                    background: rgb(56, 56, 56);
+                    padding: 10px;
+                    margin-top: 0px;
+                    border-radius: 0px 0px 0px 15px;
+                    @extend %font-2;
+                    color:$claro;
+                    font-size:12px;
+                    font-weight: normal;
+                }
+             }
+            p {    
+                padding: 10px;
+                @extend %font-2;
+                color: rgb(34, 34, 34);
+                font-size:14px;
+                font-weight: normal;
+                span {
+                    color: $azul;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                    &:hover {
+                        color: $azul-claro;
+                    }
+                }
+            }
+        }
+        .boton {
+            margin-top:40px;
+            cursor: pointer;
+            width: 90%;
+            height: 180px;
+            @extend %font-1;
+            color: $azul ;
+            font-size: 45px;
+            background-color:$claro;
+            border:$border;
+        }
+
+    }
+}

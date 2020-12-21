@@ -1,0 +1,48 @@
+%border-banner {
+    border: 10px solid  white;
+}
+
+%font-1 {
+    font-family: $font ;
+    font-size: 25px;
+    font-weight: 400;
+    color: $claro;
+    line-height: 16px;
+}
+
+%font-2 {
+    font-family: 'tahoma';
+    font-size: 17px;
+    font-weight: bold;
+    color: $azul;
+    line-height: 15px;
+}
+
+%box {
+    background: url(/resources/img/pxgray.png), white;
+    font-family: $font;
+    font-weight: normal;
+    color: black;
+    letter-spacing: 2px;
+    box-shadow: 0px 1px 0px black, 1px 2px 0px black, 3px 4px 0px black;
+}
+
+%box-input {
+        width: 90%;
+        height: 30px;
+        margin: 10px;
+        border-radius: 5px;
+        background: white;
+        border: $border;
+        box-shadow: 1px 1px 4px #ccc inset;
+}
+%footer-title {
+        @extend %box;
+        border-radius: 5px;
+        text-align: center;
+        height: 40px;
+        font-size:30px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        margin-top:30px;
+}
