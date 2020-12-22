@@ -10,9 +10,19 @@
         height: 307px;
         display: flex;
         flex-direction: column;
-        justify-items: space-around;
         box-shadow: $shadow;
         cursor: pointer;
+        &:hover {
+            background-color: $oscuro;
+            i {
+                transition: all 0.4s;
+                color: $azul-claro;
+                transform: scale(1.2);
+            }
+            h2, p{
+                color:$claro;
+            }
+        }
         i {
             margin-top: 30px;
             display: flex;

@@ -62,6 +62,13 @@
             font-size: 45px;
             background-color:$claro;
             border:$border;
+            &:hover {
+                background: $oscuro;
+                color: $azul-claro;
+                border-radius: 200px;
+                border: solid 5px $azul-claro;
+                transition: 0.5s;
+            }
         }
 
     }

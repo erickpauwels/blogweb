@@ -103,6 +103,9 @@
             width: 30%;
             display: flex;
             flex-direction: column;
+            &:hover {
+                transform: scale(1.3);
+            }
             i {
                 width: 30%;
                 font-size: 30px;
