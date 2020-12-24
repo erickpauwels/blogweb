@@ -74,7 +74,7 @@
         }
             input[type="submit"],
             input[type="reset"] {
-                margin: 20px 0px 20px 25px;
+                margin: 20px 5% 10px 6%;
                 cursor: pointer;
                 color: $claro;
                 background:  linear-gradient(to bottom, $azul-claro 0%,#2a90be 100%);
@@ -113,5 +113,22 @@
                 color: rgb(41, 41, 41);
             }
         }
+    }
+}
+//  media-query tablet 
+
+@include smarthphone {
+    .section-3 .sidebar{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        margin-top:30px;
+        width: 90%;
+            label {
+                margin-top:10px;
+            }
+        
+
     }
 }

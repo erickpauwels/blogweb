@@ -1,12 +1,11 @@
 .section-1 { 
     width: 100%;
-    .banner {
+    .banner h1{
     width: 75%;
+    padding:20px 5px;
     @extend %font-1;
-    margin: 0 auto;
     text-shadow: 2px 2px black;
     letter-spacing: 3px;
-    padding-top:35px;
     height: 100px;
     text-align: center;
     background: url(/resources/img/bakbaner.png);
@@ -17,3 +16,23 @@
   }   
 }
 
+//  media-query tablet 
+
+@include smarthphone {
+  .section-1 {
+    margin:0;
+    width: 100%;
+  .banner {
+    width: 100%;
+    margin:0;
+    padding: 5px;
+      h1 { 
+        margin:0, auto;
+        width: 90%;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 3px;
+             }
+            }
+  }
+}

@@ -5,10 +5,12 @@
     display: flex;
     justify-content: space-around;
     .icon-box{
-        width: 200px;
+        width: 90%;
+        margin:0% 1%;
         background-color: white;
         height: 307px;
         display: flex;
+        text-align: center;
         flex-direction: column;
         box-shadow: $shadow;
         cursor: pointer;
@@ -27,7 +29,7 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            font-size: 50px ;
+            font-size: 5vw;
         }
         h2 {
             display: flex;
@@ -44,3 +46,32 @@
         }
     }
 }
+
+//  media-query tablet 
+
+@include smarthphone {
+    .section-2 {
+        padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+        .icon-box{
+            width: 90%;
+            margin: 0px 1% 40px 1%;
+            padding: 5px;
+            i {
+                font-size:50px;
+            }
+            h2 {
+                font-size: 18px;
+                line-height: normal;
+            }
+            p {
+                font-size: 12px;
+                line-height: normal;
+                
+            }
+        }
+    }
+  }

@@ -63,3 +63,26 @@ animation-timing-function: linear;
         transform: rotate(360deg);
     }
 }
+
+// media querys 
+@include smarthphone {
+    .header  { 
+        display: flex;
+        flex-direction: column ;
+        justify-items:center ;
+        align-items: center;       
+        height: auto;
+        
+        .wrap {
+            width: 100%;
+            margin:0px 0px 0px 0px;
+            height: 50px;
+
+
+        }
+    .wrap .gear, .wrap h3 {
+        font-size: 20px;
+       
+    }
+    }
+}
