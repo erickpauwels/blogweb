@@ -55,7 +55,7 @@ footer .menu-footer h2, footer .location h2, footer .details h2 {
 }
 
 body {
-  background-image: url(/resources/img/pattern.png);
+  background-image: url(../resources/img/pattern.png);
 }
 
 .header {
