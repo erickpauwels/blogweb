@@ -18,7 +18,7 @@
 }
 
 footer .menu-footer h2, footer .location h2, footer .details h2, .section-3 article h2, .sidebar h3 {
-  background: url(/resources/img/pxgray.png), white;
+  background: url(../resources/img/pxgray.png), white;
   font-family: "Bebas Neue", cursive;
   font-weight: normal;
   color: black;
